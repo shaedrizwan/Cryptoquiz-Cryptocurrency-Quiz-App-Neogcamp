@@ -1,0 +1,47 @@
+.leaderboard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+    max-width: 50%;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th,
+  td {
+    border: 1px solid #ffffff;
+    text-align: left;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    max-width: 300px;
+  }
+  
+  th {
+    background-color: rgb(117, 201, 250);
+  }
+  
+  td {
+    background-color: rgb(205, 235, 253);
+  }
+
+  @media(max-width:800px){
+
+    .leaderboard-container{
+      gap: 10px;
+    padding: 1rem;
+    max-width: 80%;
+    }
+
+    th,
+    td {
+      border: 1px solid #ffffff;
+      text-align: left;
+      padding: 0.5rem 1.2rem;
+      font-size: 1.2rem;
+      max-width: 300px;
+    }
+  }
