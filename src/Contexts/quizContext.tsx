@@ -29,8 +29,6 @@ export function QuizProvider({children}){
     const [quiz,setQuiz] = useState<QuizType[] | undefined>()
     const [error,setError] = useState<ServerError>()
 
-    getQuiz()
-
     useEffect(()=>{
         (
             async function(){
@@ -42,7 +40,7 @@ export function QuizProvider({children}){
                 }
             }
         )()
-    },[error])
+    },[])
     
     return(
     <QuizContext.Provider value={{quiz}}>

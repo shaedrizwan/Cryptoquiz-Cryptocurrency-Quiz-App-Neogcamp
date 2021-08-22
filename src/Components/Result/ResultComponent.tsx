@@ -9,7 +9,6 @@ import "../../softui.css"
 
 export function ResultComponent(){
     const {id} = useParams()
-    console.log(id)
     const {score}:{score:number} = useScore()
     const { width, height } = useWindowSize()
     return(
