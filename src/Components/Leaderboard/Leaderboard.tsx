@@ -8,7 +8,7 @@ import "../../softui.css"
 
 export async function GetLeaderboard(id){
     try{
-        const response = await axios.post<LeaderBoardResponseType>('https://cryptoquiz-backend.herokuapp.com/quiz/leaderboard',{
+        const response = await axios.post<LeaderBoardResponseType>('https://cryptoquiz.herokuapp.com/quiz/leaderboard',{
             id:id
         })
         return response.data.leaderboard

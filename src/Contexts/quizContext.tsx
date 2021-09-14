@@ -10,7 +10,7 @@ export function useQuiz(){
 
 export const getQuiz = async() =>{
     try{
-        const response = await axios.get<QuizData>('https://cryptoquiz-backend.herokuapp.com/quiz')
+        const response = await axios.get<QuizData>('https://cryptoquiz.herokuapp.com/quiz')
         return response.data.quizData
     }catch(error){
         if(axios.isAxiosError(error)){
