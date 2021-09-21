@@ -6,15 +6,18 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router} from 'react-router-dom'
 import {QuizProvider} from './Contexts/quizContext'
 import { ScoreProvider } from './Contexts/scoreContext';
+import { AuthProvider } from './Contexts/authContext';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
+      <AuthProvider>
       <ScoreProvider>
         <QuizProvider>
           <App />
         </QuizProvider>
       </ScoreProvider>
+      </AuthProvider>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')

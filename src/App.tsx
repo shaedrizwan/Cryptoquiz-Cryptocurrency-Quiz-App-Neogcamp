@@ -1,8 +1,11 @@
-import React from 'react';
 import {Routes,Route} from 'react-router-dom'
 import { Header } from './Components';
 import './App.css';
 import { Home, Login, Quiz, Result, Rules, Signup } from './Pages';
+import {toast} from "react-toastify";
+
+toast.configure()
+
 
 function App() {
   return (
