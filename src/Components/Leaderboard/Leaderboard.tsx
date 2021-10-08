@@ -4,6 +4,7 @@ import axios, { AxiosError } from "axios"
 import { Id } from "../../Types/quiz"
 import { LeaderBoardResponseType, LeaderboardType } from "../../Types/leaderboard"
 import { ServerError } from "../../Types/quizContext"
+import {BlockLoading} from "react-loadingg"
 import "../../softui.css"
 
 export async function GetLeaderboard(id){
@@ -42,7 +43,7 @@ export function Leaderboard({id}:Id){
     return(
         <div className="leaderboard-container">
             <div className="title-h2">Leaderboard</div>
-            {!leaderboard && <div>Leaderboard loading...!!</div>}
+            {!leaderboard && <BlockLoading/>}
             {leaderboard &&
             <table>
                 <thead>
