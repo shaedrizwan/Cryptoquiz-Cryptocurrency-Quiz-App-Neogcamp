@@ -23,7 +23,8 @@
 }
 
 .button{
-    width: 120px;
+    width: 250px;
     margin-left: 1rem;
     padding: 0.5rem;
+    text-align: center;
 }

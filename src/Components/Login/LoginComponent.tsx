@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { useAuth } from "../../Contexts/authContext"
 import "./LoginComponent.css"
 import {BlockLoading} from "react-loadingg"
@@ -16,6 +15,10 @@ export function LoginComponent(){
         }
     }
 
+    const demoLoginPressed = () =>{
+        loginUser(email="Demo",password="Demo")
+    }
+
     return(
         <div className="login">
             <div className="card card-pr login-container">
@@ -30,6 +33,7 @@ export function LoginComponent(){
                 }
                 {login && <div className="login-label">You're already logged in! Log out?</div>}
                 <a className="btn btn-sec button" onClick={login?logoutUser:loginPressed}>{login?"Log Out":"Login"}</a>
+                {!login && <a className="btn btn-sec button" onClick={demoLoginPressed}>Login with Demo Credentials</a>}
                 {loader && <BlockLoading/>}
             </div>
         </div>
