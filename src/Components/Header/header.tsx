@@ -11,7 +11,7 @@ export default function Header(){
         <div className="header-container">
             <Link to="/" className="logo">CryptoQuiz</Link>
             <Link className="nav-items" to="/login">{login?"Logout":"Login"}</Link>
-            {/* <Link className="nav-items" to="/signup">Signup</Link> */}
+            {login || <Link className="nav-items" to="/signup">Register</Link>}
         </div>
     )
 }
