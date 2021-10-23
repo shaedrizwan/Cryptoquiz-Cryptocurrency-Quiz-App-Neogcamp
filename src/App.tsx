@@ -1,7 +1,7 @@
 import {Routes,Route} from 'react-router-dom'
 import { Header } from './Components';
 import './App.css';
-import { Home, Login, Quiz, Result, Rules, Signup } from './Pages';
+import { Home, Login, Quiz, Result, Rules, Signup, NotFound } from './Pages';
 import {toast} from "react-toastify";
 
 toast.configure()
@@ -18,6 +18,7 @@ function App() {
       <Route path="/result/:id" element={<Result/>}/>
       <Route path="/login" element={<Login/>}/>
       <Route path="/signup" element={<Signup/>}/>
+      <Route path="*" element={<NotFound/>}/>
     </Routes>
     </div>
   );
