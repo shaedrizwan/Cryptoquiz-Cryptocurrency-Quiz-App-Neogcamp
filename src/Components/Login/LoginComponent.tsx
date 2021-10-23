@@ -25,7 +25,7 @@ export function LoginComponent(){
                 <h3 className="login-title">Login</h3>
                 { !login &&
                 <>
-                <div className="login-label">Username</div>
+                <div className="login-label">Email</div>
                 <input className="form-input" type="text" onChange={(e)=>email = e.target.value}/>
                 <div className="login-label">Password</div>
                 <input className="form-input" type="password" onChange={(e)=>password = e.target.value}/>
