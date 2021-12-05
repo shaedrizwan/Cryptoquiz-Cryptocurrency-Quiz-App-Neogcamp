@@ -1,0 +1,14 @@
+.rules-container{
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:800px){
+    .rules-container{
+        flex-direction: column;
+        width: 90%;
+        padding: 1rem;
+    }
+}

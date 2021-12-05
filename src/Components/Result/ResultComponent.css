@@ -1,0 +1,16 @@
+.result-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+.score{
+    font-size: 2.5rem;
+}
+
+.btn-container{
+    margin: 5rem 0rem;
+}

@@ -1,0 +1,36 @@
+.quizlist-container{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+}
+
+.quizlist-title{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.quizlist-grid{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.quizlist-items{
+    max-width: 300px;
+    background-color: #ececee;
+    padding: 1rem;
+    margin: 1rem;
+    text-decoration: none;
+}
+
+.quizlist-name{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.quizlist-description{
+    padding: 1rem;
+}
